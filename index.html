@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <script>
+    function generateRandomLoot() {
+      const randomNumber = Math.floor(Math.random() * 100) + 1;
+      document.getElementById("random-number").innerHTML = randomNumber;
+    }
+  </script>
+  <body>
+    <center><h1>CLICK FOR LOOT!</h1></center>
+  </body>
+  <button class="buttonon" ,click="generateRandomLoot()">
+    Generate Random Number
+  </button>
+  <p>Random number: <span id="random-number"></span></p>
+  <!-- <center><p class="outcome"></p></center>
+  <button class="button" , id="lootButton">Loot!</button>
+  <center><p class="lootButtonText"></p></center> -->
+</html>

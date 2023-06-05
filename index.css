@@ -1,0 +1,71 @@
+body {
+  background-color: coral;
+}
+
+h1 {
+  font-size: 35px;
+  font-family: Impact;
+}
+
+p {
+  font-size: 40px;
+  font-family: cursive;
+}
+
+.button {
+  color: lightslategrey;
+  background-color: aqua;
+  font-size: 25px;
+  font-family: Impact;
+  height: 100px;
+  width: 150px;
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  cursor: pointer;
+}
+.button:hover {
+  color: rgb(0, 82, 163);
+  background-color: lawngreen;
+  font-size: 25px;
+  font-family: Impact;
+  cursor: pointer;
+}
+.strButton {
+  color: lightslategrey;
+  background-color: aqua;
+  font-size: 25px;
+  font-family: Impact;
+  height: 100px;
+  width: 150px;
+  position: absolute;
+  top: 32.5%;
+  left: 10%;
+  cursor: pointer;
+}
+
+.magButton {
+  color: lightslategrey;
+  background-color: aqua;
+  font-size: 25px;
+  font-family: Impact;
+  height: 100px;
+  width: 150px;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  cursor: pointer;
+}
+
+.specialButton {
+  color: lightslategrey;
+  background-color: aqua;
+  font-size: 25px;
+  font-family: Impact;
+  height: 100px;
+  width: 150px;
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  cursor: pointer;
+}

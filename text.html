@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <script>
+    let names = [
+      "Ends of the Earth",
+      "StormFall",
+      "Chaos Ripper",
+      "Daybreaker",
+      "Two Become One",
+      "Lost Memories",
+      "OathKeeper",
+      "Oblivion",
+      "Divine Rose",
+      "Sleeping Lion",
+    ];
+
+    let specialEffect = [
+      "Reduce 25% Neutral Physical Damage",
+      "Reduce 25% Fire Physical Damage",
+      "Reduce 25% Ice Physical Damage",
+      "Reduce 25% Water Physical Damage",
+      "Reduce 25% Gravity Physical Damage",
+      "Reduce 25% Wind Physical Damage",
+      "Reduce 25% Blizzard Physical Damage",
+      "Reduce 25% Thunder Physical Damage",
+      "Reduce 25% Light Physical Damage",
+      "Reduce 25% Dark Physical Damage",
+      "Reduce 25% Neutral Magic Damage",
+      "Reduce 25% Fire Magic Damage",
+      "Reduce 25% Blizzard Magic Damage",
+      "Reduce 25% Gravity Magic Damage",
+      "Reduce 25% Water Magic Damage",
+      "Reduce 25% Wind Magic Damage",
+      "Reduce 25% Thunder Magic Damage",
+      "Reduce 25% Light Magic Damage",
+      "Reduce 25% Dark Magic Damage",
+      "1.5X Fire Physical Damage",
+      "1.5X Fire Magic Damage",
+      "1.5x Blizzard Magic Damage",
+      "1.5x Water Magic Damage",
+      "1.5x Gravity Magic Damage",
+      "1.5x Wind Magic Damage",
+      "1.5x Thunder Magic Damage",
+      "1.5x Light Magic Damage",
+      "1.5x Dark Magic Damage",
+      "1.5x Heal Magic",
+      "Final Blow with Spells are refunded",
+      "Restore HP based on damage/2",
+      "Increase Physical Damage Based on Kills X STR",
+      "Increase Magic Damage Based on Kills X MAG",
+    ];
+
+    function generateRandomName() {
+      let randomIndex = Math.floor(Math.random() * names.length);
+      let randomName = names[randomIndex];
+      document.getElementById("random-name").innerHTML = randomName;
+    }
+
+    function generateRandomSpecialEffect() {
+      let randomSpecialEffect = Math.floor(
+        Math.random() * specialEffect.length
+      );
+      let randomEffect = specialEffect[randomSpecialEffect];
+      document.getElementById("random-special-effect").innerHTML = randomEffect;
+    }
+
+    function generateSTRStatNumber() {
+      let randomStat = Math.floor(Math.random() * 100) + 1;
+      document.getElementById("random-str-number").innerHTML = randomStat;
+    }
+    function generateMAGStatNumber() {
+      let randomStat = Math.floor(Math.random() * 100) + 1;
+      document.getElementById("random-mag-number").innerHTML = randomStat;
+    }
+  </script>
+  <body>
+    <center><h1>CLICK FOR LOOT!</h1></center>
+  </body>
+  <button class="button" onclick="generateRandomName()">Loot!</button>
+  <center>
+    <p><span id="random-name"></span></p>
+  </center>
+  <button class="strButton" onclick="generateSTRStatNumber()">STR</button>
+  <center>
+    <p><span id="random-str-number"></span></p>
+  </center>
+  <button class="magButton" onclick="generateMAGStatNumber()">MAG</button>
+  <center>
+    <p><span id="random-mag-number"></span></p>
+  </center>
+  <button class="specialButton" onclick="generateRandomSpecialEffect()">
+    Special Effect
+  </button>
+  <center>
+    <p><span id="random-special-effect"></span></p>
+  </center>
+</html>
